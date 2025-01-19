@@ -7,7 +7,7 @@ import { Producto } from './producto';
 @Injectable({
   providedIn: 'root'
 })
-export class ProdutcoService {
+export class ProductoService {
   private urlBase = "http://localhost:8080/inventario-app/productos";
   constructor(private clienteHttp: HttpClient) { }
 
@@ -16,7 +16,6 @@ export class ProdutcoService {
     obtenerProductosLista(): Observable<Producto []> {
       // (esto es un parametro)
       return this.clienteHttp.get<Producto[]>(this.urlBase);
-
 
     }
 }
