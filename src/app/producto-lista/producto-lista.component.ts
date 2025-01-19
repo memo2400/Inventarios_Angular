@@ -3,6 +3,7 @@ import { Producto } from '../producto';
 import { ProductoService } from '../producto.service';
 @Component({
   selector: 'app-producto-lista',
+  // aqui se asocia la pagnia html
   templateUrl: './producto-lista.component.html',
 })
 export class ProductoListaComponent {
