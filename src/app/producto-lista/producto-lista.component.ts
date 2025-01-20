@@ -24,7 +24,7 @@ export class ProductoListaComponent {
 
     // consumimos de observale
     this.productoServicio.obtenerProductosLista().subscribe(
-      // recibimos el listado de tipo observable<producto>.
+      // recibimos el listado de tipo observable<producto>. 
       (datos => {
         this.productos = datos;
       }
